@@ -1,2 +1,2 @@
 list: [1, 2, 3, 4, 5]
-avg insertion sort: 1.0
+avg comparing for quick sort: 1.4

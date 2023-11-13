@@ -16,9 +16,9 @@ class Task12_20:
         sum_compare_interpolate = 0
 
         for i in input_list:
-            sum_compare_linear += Search_algorithms().linear_search_comparing(list=input_list, target=i)
-            sum_compare_binary += Search_algorithms().binary_search_comparing(list=sorted(input_list), target=i)
-            sum_compare_interpolate += Search_algorithms().interpolation_search_comparing(list=sorted(input_list), target=i)
+            sum_compare_linear += Search_algorithms().linear_search_comparing(list=input_list, target=i, showCountComparing=True)
+            sum_compare_binary += Search_algorithms().binary_search_comparing(list=sorted(input_list), target=i, showCountComparing=True)
+            sum_compare_interpolate += Search_algorithms().interpolation_search_comparing(list=sorted(input_list), target=i, showCountComparing=True)
 
         File_manager().file_write(file_name=self.output_file, text="avg linear: " + str(sum_compare_linear / n) + "\n", mode='a')
         File_manager().file_write(file_name=self.output_file, text="avg binary: " + str(sum_compare_binary / n) + "\n", mode='a')
